@@ -18,7 +18,7 @@ function addTask(event) {
     todoDiv.classList.add('tasks')
 
     const newTask = document.createElement('li')
-    while (toDoInput.value && toDoInput.value.trim() !== '' ) {
+    while (toDoInput.value.trim() !== '' ) {
     newTask.innerText = toDoInput.value
     toDoInput.value = ''
     newTask.classList.add('todoItem')
@@ -30,7 +30,6 @@ function addTask(event) {
     todoDiv.appendChild(doneButton)
 
     const deleteTaskBtn = document.createElement('button')
-
     deleteTaskBtn.innerHTML = '<i class="far fa-trash-alt" ></i>'
     deleteTaskBtn.classList.add('deleteTaskBtn')
     todoDiv.appendChild(deleteTaskBtn)
@@ -39,17 +38,17 @@ function addTask(event) {
 }
 
 function deleteTask(event) {
-    const theTarget = event.target;
-    if (theTarget.classList[0] === 'deleteTaskBtn') {
-        const removeTask = theTarget.parentElement;
+    const target = event.target;
+    if (target.classList.contains('deleteTaskBtn')) {
+        const removeTask = target.parentElement;
         removeTask.remove();
     }
 }
 
 function toCrossOut(event) {
-    const theTarget = event.target;
-    if (theTarget.classList[0] === 'doneBtn') {
-        const сrossOutTask = theTarget.parentElement;
+    const target = event.target;
+    if (target.classList.contains("doneBtn")) {
+        const сrossOutTask = target.parentElement;
         сrossOutTask.classList.add('crossOut');
 
     }
