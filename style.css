@@ -2,13 +2,11 @@
     margin: 0;
     padding: 0;
     border: 0;
-
 }
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
-
 }
 div, span {
     margin: 0;
@@ -32,15 +30,12 @@ padding-top: 10%;
     margin-bottom: 150px;
 }
 
-
 .header-main {
     margin: 0 auto;
     display: flex;
     justify-content: center;
     color: white;
     font-size: 1.5rem;
-//border: red solid 1 px;
-
 }
 
 .container-form {
@@ -103,8 +98,6 @@ form input {
     background: #e3e3e3;
     border: none;
     outline: none;
-
-
 }
 
 form button {
@@ -134,7 +127,6 @@ form button:hover {
     width: 100%;
     background: #afb2e7;
     border-radius: 5px;
-
 }
 
 .tasks {
@@ -146,7 +138,6 @@ form button:hover {
     justify-content: space-between;
     margin: 0.5rem;
     font-size: 1.1rem;
-
 }
 
 .todoItem {
@@ -159,8 +150,6 @@ form button:hover {
     padding: 7px;
     background-color: rgba(91, 62, 89, 0.7);
     outline: none;
-
-
 }
 
 .doneBtn:hover {
@@ -173,7 +162,12 @@ form button:hover {
     background-color: rgba(91, 62, 89, 0.7);
     outline: none;
 }
-
+.fa-trash-alt{
+    pointer-events: none;
+}
+.fa-check-circle{
+    pointer-events: none;
+}
 .deleteTaskBtn:hover {
     background-color: rgb(91, 62, 89);
     cursor: pointer;
@@ -184,8 +178,3 @@ form button:hover {
     opacity: 70%;
     transition: linear 0.3s;
 }
-
-
-
-
-

@@ -4,7 +4,6 @@ const toDoInput = document.querySelector('.toDoInput')
 const toDoBtn = document.querySelector('.toDoBtn')
 const toDoList = document.querySelector('.toDoList')
 const toDoDone = document.querySelector('.toDoList')
-//const inputValue = document.getElementById('iii').value
 
 toDoBtn.addEventListener('click', addTask)
 toDoList.addEventListener('click', deleteTask)
@@ -47,11 +46,11 @@ function deleteTask(event) {
 
 function toCrossOut(event) {
     const target = event.target;
-    if (target.classList.contains("doneBtn")) {
+    if (target.classList.contains('doneBtn')) {
         const сrossOutTask = target.parentElement;
         сrossOutTask.classList.add('crossOut');
-
     }
 }
+
 
 
